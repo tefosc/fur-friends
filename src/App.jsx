@@ -1,9 +1,10 @@
 import "./App.css";
+import { AdoptionPage } from "./pages/AdoptionPage";
 
 function App() {
   return (
     <>
-      <h1 className="text-3xl font-black">Fur Friens</h1>
+      <AdoptionPage />
     </>
   );
 }
