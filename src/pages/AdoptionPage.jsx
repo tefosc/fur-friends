@@ -7,11 +7,11 @@ export function AdoptionPage() {
   const [selectedAnimal, setSelectedAnimal] = useState(null);
 
   return (
-    <div className="flex  justify-evenly bg-slate-500">
+    <div className="flex flex-col md:flex-row gap-4 md:justify-evenly justify-evenly">
       <article>
         <AnimalList animals={mockPets} onSelect={setSelectedAnimal} />
       </article>
-      <aside>
+      <aside className="md:w-auto w-full">
         <AnimalDetail selectedAnimal={selectedAnimal} />
       </aside>
     </div>
